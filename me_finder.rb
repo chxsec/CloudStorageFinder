@@ -30,7 +30,7 @@
 
 puts"me_finder 1.0 Robin Wood (robin@digi.ninja) (https://digi.ninja)"
 puts
-puts "As Mobile Me no longer exists, this is here purely for historical reasons"
+puts "As Mobile Me no longer exist, this is here purely for historical reasons"
 puts
 
 exit
@@ -112,7 +112,7 @@ def download_file path, tabs, verbose = false
 		fs_dir = $1
 		filename = $2
 
-		if !File.exists? fs_dir
+		if !File.exist? fs_dir
 			FileUtils.mkdir_p fs_dir
 		end
 
@@ -324,7 +324,7 @@ end
 
 filename = ARGV.shift
 
-if !File.exists? filename
+if !File.exist? filename
 	puts "Wordlist file doesn't exist"
 	puts
 	usage
