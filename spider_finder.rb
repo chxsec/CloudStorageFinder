@@ -2,8 +2,8 @@
 
 # == Spider Finder - Trawl SpiderOak accounts looking for shared information
 #
-# Take a name list and see if it exists as an account, if so then run through
-# a set of common share names # to see if one exists for that user. Dump out
+# Take a name list and see if it exist as an account, if so then run through
+# a set of common share names # to see if one exist for that user. Dump out
 # any data that is found.
 #
 # For more information on how this works see the project page
@@ -254,7 +254,7 @@ end
 
 names_filename = ARGV.shift
 
-if !File.exists? names_filename
+if !File.exist? names_filename
 	puts "Names file doesn't exist"
 	puts
 	usage
@@ -263,7 +263,7 @@ end
 
 folders_filename = ARGV.shift
 
-if !File.exists? folders_filename
+if !File.exist? folders_filename
 	puts "Folders file doesn't exist"
 	puts
 	usage
